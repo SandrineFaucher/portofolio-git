@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>Portfolio</title>
+</head>
+
+
+<body>
+    <header>
+        <div id="accueil">
+            <i id="hamburger" class="fa-solid fa-bars fa-3x" onclick="showOrHideLinks()"></i>
+            <img src="logoportefolio.png" alt="logo">
+
+            <nav id="navigation">
+                <ul>
+                    <li><a href="#profil">Profil</a></li>
+                    <li><a href="#technologie">Technologies</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#realisations">Réalisations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+
+        <div id="profil">
+
+            <div class="presentation">
+                <h1>Développeuse</h1>
+                <h4>Junior</h4>
+                <p>Assistante en informatique médicale depuis 20 ans,
+                    j'aime trouver des solutions pratiques pour alléger les taches complexes.
+                    Un bilan de compétences a fait sens pour moi et m'a conforté vers une
+                    reconversion dans le développement web.
+                </p>
+            </div>
+
+            <img src="./collage-concepts-saas.jpg">
+
+
+            <a href="./nouveau cv sandrine.jpg">
+
+                <button class="btncv">
+                    Téléchargez mon cv
+                    <i class="fa-solid fa-arrow-down"></i>
+                </button>
+            </a>
+
+
+
+            <a href="#contact">
+                <button class="btncontact">
+                Contactez moi
+                </button>
+            </a>
+            
+        </div>
+
+        <div id="technologie">
+            <h2>Technologies en cours d'acquisition</h2>
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-bootstrap"></i>
+            <i class="fa-brands fa-square-js"></i>
+            <i class="fa-brands fa-laravel"></i>
+            <i class="fa-brands fa-php"></i>
+            <i class="fa-brands fa-java"></i>
+            <i class="fa-brands fa-github"></i>
+
+        </div>
+
+        <div id="competences">
+            <h2>Mes compétences</h2>
+            <div class="clipart">
+                <img src="./undraw_designer_re_5v95 (2).svg" alt="imagedesigner">
+                <p>Expérience dans le design graphique.</p>
+            </div>
+
+            <div class="clipart">
+                <img src="./undraw_teamwork_hpdk.svg" alt="teamword">
+                <p>Expérience du travail en équipe et du relationnel avec les acteurs de la santé.</p>
+
+            </div>
+
+            <div class="clipart">
+                <img src="./undraw_career_development_re_sv91.svg" alt="agile">
+                <p>Méthode Agile.</p>
+            </div>
+        </div>
+
+        <div id="realisations">
+            <h2>Mon portfolio</h2>
+            <div class="conteneur1">
+                <div class="d1"></div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <h2>contact</h2>
+        <div id="contact">
+            
+            <div class="box">
+                <i class="fa-solid fa-mobile"></i>
+                <p>06 98 69 55 99</p>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-envelope"></i>
+                <p>sandrinefaucher2606@gmail.com</p>
+            </div>
+
+            <div class="boxreseaux">
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-whatsapp"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-facebook-messenger"></i>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script type="text/javascript">
+
+        function showOrHideLinks() {
+
+            // je cible la liste des liens et ja le stocke dans une variable (+ lisible)
+            const navlinks = document.getElementById('navigation')
+
+            // La propriété display de la liste des liens est sur none ? Je l'affiche. Sinon : je la masque
+            navlinks.style.display == 'none' ? navlinks.style.display = 'block' : navlinks.style.display = 'none'
+        }
+
+    </script>
+
+</body>
+
+</html>

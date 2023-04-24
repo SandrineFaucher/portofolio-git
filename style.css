@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "comfortaa", cursive;
+    color: #2D3142;
+
+
+}
+
+
+/* Gestion de la barre de navigation*/
+
+#accueil img {
+
+    width: 20%;
+    margin: 20px;
+    align-items: center;
+
+}
+
+#accueil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+#hamburger {
+    visibility: hidden;
+}
+
+#navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#navigation ul li {
+    text-decoration: none;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 3px 3px 3px #4F5D75;
+    text-align: center;
+}
+
+ul,
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+#navigation ul li:hover {
+
+    box-shadow: 3px 3px 3px #EF8354;
+}
+
+/* fin de gestion de la barre de navigation*/
+
+/* Gestion de la balise section */
+
+/* profil*/
+
+#profil {
+    height: auto;
+    margin: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#profil img {
+    width: 45%;
+}
+
+.presentation {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+h1,
+h4,
+p {
+    padding: 10px;
+    color: #2D3142;
+}
+
+p {
+    line-height: 1.5;
+    text-justify: inter-word;
+    text-align: justify;
+}
+
+.btncv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+button {
+    text-decoration: none;
+    background-color: #2D3142;
+    color: white;
+    font-size: 16px;
+    width: 200px;
+    height: 100px;
+    border-radius: 15px;
+    background-color: #2D3142;
+    box-shadow: 3px 3px 3px #4F5D75;
+    margin-left: 30px;
+}
+
+
+button i {
+
+    color: white;
+    font-size: 20px;
+    background-color: #2D3142;
+    margin: 10px;
+    text-underline-position: none;
+}
+
+button:hover {
+    box-shadow: 3px 3px 3px #EF8354;
+}
+
+/* FIN PROFIL */
+
+/* Téchnologies en cours d'acquisition */
+
+#technologie {
+    margin: 50px;
+    background-color: #EF8354;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+h2 {
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    color: #2D3142;
+    text-transform: uppercase;
+}
+
+
+#technologie i {
+    font-size: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    color: #2D3142
+}
+
+/* FIN TECHNOLOGIE */
+
+/* Section compétences */
+
+#competences {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#competences img {
+    width: 20%;
+}
+
+#competences p {
+    margin: 30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.clipart {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.clipart p {
+    width: 50%;
+
+}
+
+/* FIN SECTION COMPETENCE */
+
+/* Section realisations */
+/* Animation slide */
+
+.d1 {
+    width: 3840px;
+    height: 720px;
+    background-color: #EF8354;
+    background: url(./grande\ image\ slide.png);
+    background-size: contain;
+    animation: defilment 18s linear infinite;
+}
+
+.conteneur1 {
+    overflow: hidden;
+    max-width: 960px;
+    margin: 50px auto;
+    box-shadow: opx 15px 10px -5px #4F5D75;
+}
+
+@keyframes defilment {
+    0% {
+        transform: translate(O, 0);
+    }
+
+    100% {
+        transform: translate(-2880px, 0);
+    }
+
+}
+
+/* FIN SLIDE - SECTION REALISATIONS */
+
+/* FIN SECTION */
+
+/* Gestion du footer - contact */
+
+#contact {
+
+
+    background-color: #2D3142;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+
+.box {
+    width: 150;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: #EF8354;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.box i {
+    color: #2D3142;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+}
+
+.box p {
+    font-weight: bold;
+    margin: 0 15px 0 15px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.boxreseaux {
+    width: 150;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #EF8354;
+    margin: 30px;
+    border-radius: 20px;
+
+}
+
+.boxreseaux i {
+    color: #2D3142;
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+}
+
+/* FIN SECTION CONTACT - FOOTER */
+
+/* Médias queries - responsive design */
+
+
+@media screen and (max-width : 1024px) {
+    #accueil {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        z-index: 1;
+    }
+
+    #contact {
+        flex-direction: column;
+    }
+
+    body {
+        margin-top: 70vh;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #profil img {
+        order: -1;
+
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+
+    #hamburger {
+
+        visibility: visible !important;
+        color: #2D3142;
+    }
+
+    #navigation ul {
+
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .presentation {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    #profil {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        justify-content: space-between;
+    }
+
+    #profil img {
+        width: 100%;
+    }
+
+    button {
+        margin: 30px;
+        width: 150px;
+        height: 70px;
+        font-size: 13px;
+        text-align: center;
+
+    }
+
+    #competences img {
+        width: 50%;
+    }
+
+    .clipart p {
+        width: 40%;
+    }
+}
+    /* FIN MEDIAS QUERIES */
